@@ -1,5 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
+import AccountsContainer from './AccountsContainer';
 
 //START TIME: 6:30pm after wireframe
 
@@ -46,6 +47,7 @@ class App extends Component {
         <header className="App-header">
           <h1>ACCOUNTS</h1>
         </header>
+        <AccountsContainer />
       </div>
     );
   }
