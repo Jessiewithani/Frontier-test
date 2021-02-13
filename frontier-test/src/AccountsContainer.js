@@ -9,12 +9,16 @@ import InactiveContainer from './InactiveContainer';
 // --> overdue
 // --> inactive
 
-const AccountsContainer = () => {
+// I have to pass the information down to my components
+
+const AccountsContainer = ({accounts}) => {
+
+    // console.log('acctContProps', accounts)
     return (
         <div className="accounts-container">
-            <ActiveContainer />
-            <OverdueContainer />
-            <InactiveContainer />
+            <ActiveContainer accounts={accounts} />
+            <OverdueContainer accounts={accounts} />
+            <InactiveContainer accounts={accounts} />
         </div>
         
     )

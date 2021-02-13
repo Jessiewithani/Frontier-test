@@ -23,8 +23,8 @@ import AccountsContainer from './AccountsContainer';
 // I'm going to turn my App component into a class component, so I can have my state
 
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       accounts: [],
@@ -40,14 +40,15 @@ class App extends Component {
   }
 
   render() {
-    { console.log('accounts', this.state.accounts)}
+    // { console.log('accounts', this.state.accounts)}
+    //this is where I would put the loading logic while waiting for my data to fetch
 
     return (
       <div className="App">
         <header className="App-header">
           <h1>ACCOUNTS</h1>
         </header>
-        <AccountsContainer />
+        <AccountsContainer accounts={this.state.accounts}/>
       </div>
     );
   }
