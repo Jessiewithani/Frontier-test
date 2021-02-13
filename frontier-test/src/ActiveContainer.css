@@ -1,0 +1,12 @@
+.active-container {
+    background-color: tan;
+    height: 200px;
+    display: flex;
+    overflow: scroll;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+h3 {
+    display: block;
+}
