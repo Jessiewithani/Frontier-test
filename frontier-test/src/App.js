@@ -32,6 +32,15 @@ class App extends Component {
     }
   }
 
+  //to properly format the telephone number. I have to create a function that includes a regex, which then converts it to the right format
+  // this is the link to my function from the repl that I created and was going to implement into my code
+  // --> https://repl.it/@JDawgIsSteve/phoneFormat#index.js
+  //then i would pass it down as a prop to my account containers then down to my account and interpolate it when rendering the information
+
+  //to format the dates, my logic would be to split the string
+  //then references the docs, i would use getDate, getMonth, getFullYear to combine a string with my final product
+
+
   componentDidMount = () => {
     fetch('https://frontiercodingtests.azurewebsites.net/api/accounts/getall')
       .then(res => res.json())
